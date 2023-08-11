@@ -1,6 +1,23 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "strict": true
+    "baseUrl": ".",
+    "paths": {
+      "@src/*": [
+        "src/*"
+      ],
+    },
+    "target": "esnext",
+    "module": "commonjs",
+    "lib": [
+      "es5",
+      "es6",
+      "dom",
+      "dom.iterable"
+    ],
+    "allowJs": true,
+    "jsx": "react-native",
+    "noEmit": true,
+    "strict": true,
   }
 }
